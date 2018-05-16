@@ -1,0 +1,3 @@
+.DS_Store
+.travis/id_rsa
+.travis/id_rsa.pub

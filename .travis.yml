@@ -1,0 +1,21 @@
+sudo: false
+
+language: node_js
+node_js: node
+
+git:
+  depth: 5
+
+notifications:
+  email: false
+
+script: true
+
+deploy:
+  provider: script
+  script: .travis/deploy.sh
+  skip_cleanup: true
+  on:
+    repo: clippings/cdw
+    branch: master
+    tags: true
